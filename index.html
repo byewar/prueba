@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>َAnimated Login Form</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-
-<form class="box" action="index.html" method="post">
-  <h1>Login</h1>
-  <input type="text" name="" placeholder="Username">
-  <input type="password" name="" placeholder="Password">
-  <input type="submit" name="" value="Login">
-</form>
-
-
-  </body>
+<html>
+	<head>
+		<title>Formulario De Contacto</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+	<body>
+		<div class="form">
+			<form action="guardar.php" method="POST">
+				<p>Nombre</p>
+				<label for="nombre">Su nombre</label>
+				<br>
+				<input type="text" name="nombre" placeholder="Nombre" required>
+				<p>Correo</p>
+				<label for="correo">Direccion De Correo</label>
+				<br>
+				<input type="email" name="correo" placeholder="alguien@algo.com" required>
+				<p>Mensaje</p>
+				<label for="mensaje">Su Mensaje</label>
+				<br>
+				<textarea name="mensaje" placeholder="Mensaje" required></textarea>
+				<br>
+				<br>
+				<input type="submit" value="Enviar">
+			</form>
+		</div>
+	</body>
 </html>
